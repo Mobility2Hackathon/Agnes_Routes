@@ -1,53 +1,55 @@
-# Agnes_Routes
-Projeto desenvolvido durante hackathon do Instituto Joule. O Agnes Routes propõe uma solução com Inteligência Artificial para segurança de mulheres na mobilidade urbana, utilizando dados territoriais, infraestrutura, percepção emocional e análise de risco para sugerir rotas mais seguras.
-
 # 🛡️ Agnes Routes
 
-### *Rota Segura e Inteligência Artificial para Mobilidade Feminina*
+**Projeto desenvolvido durante hackathon do Instituto Joule.**  
+O Agnes Routes propõe uma solução com Inteligência Artificial para segurança de mulheres na mobilidade urbana, utilizando dados territoriais, infraestrutura, percepção emocional e análise de risco para sugerir rotas mais seguras.
 
 ---
 
 ## 📌 Sobre o Projeto
 
-**NOME DA SOLUÇÃO: Agnes Routes**
-
-O Agnes Routes é uma solução tecnológica voltada para a segurança de mulheres em seus deslocamentos urbanos. O nome homenageia Agnes Meyer Driscoll, criptologista americana pioneira em segurança da informação. Essa escolha reforça o propósito central do projeto: utilizar tecnologia, dados e inteligência artificial para ampliar a proteção e o direito de ir e vir das mulheres nas cidades.
+O Agnes Routes é uma solução tecnológica voltada para a segurança de mulheres em seus deslocamentos urbanos.  
+O nome homenageia Agnes Meyer Driscoll, criptologista americana pioneira em segurança da informação.  
+Essa escolha reforça o propósito central do projeto: utilizar tecnologia, dados e inteligência artificial para ampliar a proteção e o direito de ir e vir das mulheres nas cidades.
 
 ---
 
 ## 🚨 Problema e Contexto Histórico
 
-O projeto parte da identificação de que a insegurança no deslocamento diário é uma dificuldade central enfrentada pelas mulheres, manifestada por assédio, violência e sensação constante de medo. Isso leva muitas a alterar rotinas e trajetos, impactando sua liberdade e qualidade de vida.
+O projeto parte da identificação de que a insegurança no deslocamento diário é uma dificuldade central enfrentada pelas mulheres, manifestada por assédio, violência e sensação constante de medo.  
+Isso leva muitas a alterar rotinas e trajetos, impactando sua liberdade e qualidade de vida.
 
 ### Hipótese / Insight Central
 
 A hipótese foi validada através de reportagens e de uma pesquisa própria realizada com 50 mulheres.
 
-Os relatos coletados evidenciaram que todas as participantes já sofreram ou presenciaram algum tipo de violência no deslocamento urbano.
-
-A decisão de rota é fortemente guiada pelo medo e pela experiência vivida.
-
-O principal insight é a ausência de uma ferramenta que combine dados reais do território urbano (infraestrutura) com experiências emocionais e comportamentais reais (dados primários).
+- Os relatos coletados evidenciaram que todas as participantes já sofreram ou presenciaram algum tipo de violência no deslocamento urbano.
+- A decisão de rota é fortemente guiada pelo medo e pela experiência vivida.
+- O principal insight é a ausência de uma ferramenta que combine dados reais do território urbano (infraestrutura) com experiências emocionais e comportamentais reais (dados primários).
 
 ---
 
 ## 🎤 Entrevista com Especialista em Dados e IA
 
-### Midian Brandão
+### Midian Brandão  
+https://www.linkedin.com/in/midian-brandao/
 
-A arquitetura do modelo de risco foi validada e aprimorada pela profissional de dados e IA, Midian Brandão (https://www.linkedin.com/in/midian-brandao/). Sua análise confirmou a necessidade de uma IA situacional e centrada na experiência da mulher:
+A arquitetura do modelo de risco foi validada e aprimorada pela profissional de dados e IA, Midian Brandão.  
+Sua análise confirmou a necessidade de uma IA situacional e centrada na experiência da mulher:
 
-* **Validação da Ponderação:** Midian destacou que o fator mais negligenciado, mas que mais pesa na segurança prática, é o estado real da rua (iluminação fraca, calçada quebrada, canto escuro, ponto cego). Isso justificou o alto peso dado ao índice de iluminação no modelo final.
+- **Validação da Ponderação:**  
+  Midian destacou que o fator mais negligenciado, mas que mais pesa na segurança prática, é o estado real da rua (iluminação fraca, calçada quebrada, canto escuro, ponto cego). Isso justificou o alto peso dado ao índice de iluminação no modelo final.
 
-* **Reatividade em Tempo Real:** A especialista sugeriu que, para ser realmente útil, a solução deveria dividir a atualização dos dados em três ciclos (Clocks de Risco):
+- **Reatividade em Tempo Real:**  
+  A especialista sugeriu que, para ser realmente útil, a solução deveria dividir a atualização dos dados em três ciclos (Clocks de Risco):
+  - Hot (5–10 segundos)  
+  - Warm (1–3 horas)  
+  - Cold (6–24 horas)
 
-  * Hot (5–10 segundos)
-  * Warm (1–3 horas)
-  * Cold (6–24 horas)
+- **Dica para Viabilidade:**  
+  Uso de APIs externas como Google Maps Directions & Roads API e OpenStreetMap + Overpass API.
 
-* **Dica para Viabilidade:** Ela sugeriu o uso de APIs externas como Google Maps Directions & Roads API e OpenStreetMap + Overpass API.
-
-* **Geração de Alerta Tático:** A melhor forma de fazer o usuário reagir é o combo Visual claro (mapa em vermelho), alerta rápido ("Trecho arriscado agora") e solução imediata (sugestão de rota mais segura automaticamente).
+- **Geração de Alerta Tático:**  
+  Combo Visual claro (mapa em vermelho), alerta rápido ("Trecho arriscado agora") e solução imediata (sugestão de rota mais segura automaticamente).
 
 ---
 
@@ -57,19 +59,22 @@ O Agnes Routes é um aplicativo móvel que sugere rotas mais seguras, e não ape
 
 ### Fluxo Básico de Uso
 
-1. **Acesso e Cadastro:** Usuária faz login e, obrigatoriamente, cadastra dois Contatos de Emergência.
-2. **Busca de Destino:** A usuária seleciona um destino e o aplicativo inicia a simulação.
-3. **Cálculo da Rota Segura:** Mensagem exibida: *"Calculando rota mais segura..."*.
+1. **Acesso e Cadastro:** Usuária faz login e, obrigatoriamente, cadastra dois Contatos de Emergência.  
+2. **Busca de Destino:** A usuária seleciona um destino e o aplicativo inicia a simulação.  
+3. **Cálculo da Rota Segura:** Mensagem exibida: *"Calculando rota mais segura..."*.  
 4. **Visualização do Risco e Rota:** Exibição de Zonas de Risco, Comércios Próximos e Opções de Transporte.
 
 ### Entrega do MVP (Desenvolvimento Figma)
 
 O MVP entrega:
 
-* Telas Essenciais: Login, Cadastro, Perfil, Rotas Salvas e Configurações.
-* Funções de Emergência: Compartilhamento de localização em tempo real e chamada de emergência.
-* Interação Colaborativa: Relatos de insegurança em pontos do mapa.
-* Simulação de Roteamento respeitando vias urbanas.
+- Telas Essenciais: Login, Cadastro, Perfil, Rotas Salvas e Configurações.  
+- Funções de Emergência: Compartilhamento de localização em tempo real e chamada de emergência.  
+- Interação Colaborativa: Relatos de insegurança em pontos do mapa.  
+- Simulação de Roteamento respeitando vias urbanas.
+
+🔗 **Link para acesso ao modelo Figma:**  
+http://bit.ly/48QPymW
 
 ---
 
@@ -79,12 +84,12 @@ A IA atua na qualificação do território urbano (Scoring Territorial).
 
 ### Modelo de Scoring Ponderado
 
-| Índice                                | Peso | Funções da IA                         |
-| ------------------------------------- | ---- | ------------------------------------- |
-| Baixa Iluminação (dark_index)         | 40%  | Mede densidade e espaçamento de luzes |
-| Fluxo de Pessoas (flux_index)         | 30%  | Penaliza ruas desertas                |
-| Infraestrutura Urbana (infra_index)   | 15%  | Avalia vias e acesso                  |
-| Percepção Emocional (emocional_index) | 15%  | Modelado a partir de relatos reais    |
+| Índice | Peso | Funções da IA |
+|------|------|---------------|
+| Baixa Iluminação (dark_index) | 40% | Mede densidade e espaçamento de luzes |
+| Fluxo de Pessoas (flux_index) | 30% | Penaliza ruas desertas |
+| Infraestrutura Urbana (infra_index) | 15% | Avalia vias e acesso |
+| Percepção Emocional (emocional_index) | 15% | Modelado a partir de relatos reais |
 
 O Índice de Risco Final varia de **0 a 100**.
 
@@ -92,16 +97,16 @@ O Índice de Risco Final varia de **0 a 100**.
 
 ## ⚖️ Uso Ético e Responsável da IA
 
-* Transparência e Explicabilidade
-* Privacidade e Anonimato
-* Mitigação de Viés
-* Foco na Prevenção, Não na Vigilância
+- Transparência e Explicabilidade  
+- Privacidade e Anonimato  
+- Mitigação de Viés  
+- Foco na Prevenção, Não na Vigilância  
 
 ---
 
 ## 💼 Modelo de Negócio e Monetização
 
-Modelo **Business-to-Government (B2G)**, com foco em licitação pública junto à Secretaria de Segurança Pública de São Paulo (SSP-SP).
+Modelo Business-to-Government (B2G), com foco em licitação pública junto à Secretaria de Segurança Pública de São Paulo (SSP-SP).
 
 ---
 
@@ -136,35 +141,26 @@ hackathon_dados/
 │
 └── bases_ssp_criminalidade/
     ├── OcorrenciaMensal(Criminal)-São Paulo.xlsx
-```
+▶️ Como Executar o Notebook de Análise
+1️⃣ Baixar o Projeto
 
----
+Clique em Code
 
-## ▶️ Como Executar o Notebook de Análise
+Selecione Download ZIP
 
-### 1️⃣ Baixar o Projeto
+Extraia a pasta em seu computador
 
-* Clique em **Code**
-* Selecione **Download ZIP**
-* Extraia a pasta em seu computador
-
-### 2️⃣ Preparar o Ambiente
-
-```bash
+2️⃣ Preparar o Ambiente
 pip install pandas geopandas matplotlib numpy jupyter
-```
 
-### 3️⃣ Executar o Notebook
-
-```bash
+3️⃣ Executar o Notebook
 jupyter notebook
-```
 
-* Abra o notebook presente na pasta do projeto
-* Execute as células em ordem para reproduzir as análises
 
----
+Abra o notebook presente na pasta do projeto
 
-## 🚀 Considerações Finais
+Execute as células em ordem para reproduzir as análises
+
+🚀 Considerações Finais
 
 Este repositório apresenta a base analítica e conceitual do Agnes Routes, incluindo dados, modelagem de risco e validação da proposta como MVP de impacto social com uso responsável de Inteligência Artificial.
