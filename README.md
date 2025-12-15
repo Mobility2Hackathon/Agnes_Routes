@@ -11,6 +11,9 @@ O Agnes Routes é uma solução tecnológica voltada para a segurança de mulher
 O nome homenageia Agnes Meyer Driscoll, criptologista americana pioneira em segurança da informação.
 Essa escolha reforça o propósito central do projeto: utilizar tecnologia, dados e inteligência artificial para ampliar a proteção e o direito de ir e vir das mulheres nas cidades.
 
+#### Acesse aqui nosso Pitch:
+👉🏽 https://bit.ly/48DEieT
+
 ---
 
 ## 🚨 Problema e Contexto Histórico
