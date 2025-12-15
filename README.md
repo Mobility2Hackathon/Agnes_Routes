@@ -106,7 +106,11 @@ O Índice de Risco Final varia de **0 a 100**.
 
 ## 💼 Modelo de Negócio e Monetização
 
-Modelo Business-to-Government (B2G), com foco em licitação pública junto à Secretaria de Segurança Pública de São Paulo (SSP-SP).
+O Agnes Routes adota um modelo de negócios Business-to-Government (B2G), baseado em serviços e licitação pública: 
+
+Licitação e Segurança Pública: O aplicativo visa atender a uma licitação de projeto solicitada pela Secretaria de Segurança Pública de São Paulo (SSP-SP). A monetização ocorre através da contratação do serviço pelo órgão público para garantir a segurança da mulher, fornecendo uma solução de prevenção de riscos com IA para uso da população. 
+
+Benefício Público: O foco é na otimização dos recursos de segurança pública, oferecendo uma camada preditiva e prescritiva que reduz a exposição ao risco e fornece dados valiosos para o planejamento urbano e policial (Ex: onde instalar mais iluminação, onde concentrar patrulhamento em horários críticos).
 
 ---
 
