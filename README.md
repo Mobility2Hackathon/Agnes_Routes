@@ -163,4 +163,5 @@ Execute as células em ordem para reproduzir as análises
 
 🚀 Considerações Finais
 
-Este repositório apresenta a base analítica e conceitual do Agnes Routes, incluindo dados, modelagem de risco e validação da proposta como MVP de impacto social com uso responsável de Inteligência Artificial.
+Este repositório apresenta a base analítica e conceitual do Agnes Routes, incluindo dados,
+modelagem de risco e validação da proposta como MVP de impacto social com uso responsável de Inteligência Artificial.
